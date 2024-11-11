@@ -10,16 +10,23 @@ class Juego:
         print('[2] Instrucciones.')
         print('[3] Salir.')
 
-    def ejecutar(self):
+    def principal(self):
         self.mostrarTitulo()
         while True:
             self.menu()
+            # Usar try-except para control de entrada de numeros
             opcion = int(input('Seleccione opción: '))
             if opcion == 1:
                 pass
             elif opcion == 2:
-                # Leer instrucciones de un txt
-                pass
+                try:
+                    with open('instrucciones.txt', 'r', encoding='UTF-8') as instrucciones:
+                        contenido = instrucciones.read()
+                        print('\n' + contenido + '\n')
+                except FileNotFoundError:
+                    print('El archivo "instruciones.txt" no se encuentra en la carpeta.')
+
+                
             elif opcion == 3:
                 print('Juego terminado.')
                 break
@@ -28,6 +35,6 @@ class Juego:
 
 if __name__ == '__main__':
     juego = Juego()
-    juego.ejecutar()
+    juego.principal()
                 
 
