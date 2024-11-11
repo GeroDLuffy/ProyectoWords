@@ -1,26 +1,36 @@
-1. Despertás en un bosque oscuro, está lloviendo. No recordas nada y te sentís mareado.
+#INICIO
+#SIGUIENTE: para pasar al siguiente escenario
+#HISTORIA: para leer la historia
+-EVENTO: para ingresar algo pedido al usuario
+$OPCIONES
+*OPCION N
+
+#INICIO|Despertás en un bosque oscuro, está lloviendo. No recordas nada y te sentís mareado.
 Cuando la lluvia te llega a los ojos, y los logras abrir lo primero que logras reconocer es el sonido de un caballo acercandóse velozmente con su
 jinete. Parece que cada vez se acerca más.
+
 
 print('...')
 input('Presione ENTER para seguir')
 
-2. Ya al lado tuyo, el jinete te pregunta tu nombre.
-print('...')
-[EVENTO]| M-mi nombre es {nombre} ...
+#HISTORIA|Ya al lado tuyo, el jinete te pregunta tu nombre.
 
-3. Muy bien, {nombre}. El mio es Eldric Wealthman. Soy un mercader ambulante y tienes suerte de que te haya encontrado...
+print('...')
+
+-EVENTO| M-mi nombre es {nombre} ...
+
+#HISTORIA|Muy bien, {nombre}. El mio es Eldric Wealthman. Soy un mercader ambulante y tienes suerte de que te haya encontrado...
 Podrías haber muerto en estas tierras. Vamos, te llevaré a casa.
 
 print('...')
 input('Presione ENTER para seguir')
 
-4. Te desmayaste todo el camino, no sabés cuanto tiempo pasó. Despertás en la casa del Sr. Wealthman.
+#HISTORIA|Te desmayaste todo el camino, no sabés cuanto tiempo pasó. Despertás en la casa del Sr. Wealthman.
 (Wealthman): Tiene suerte de estar vivo, ya estás como nuevo. ¿Eres de por aquí?
 
-[OPCIONES]|
-[0] No sé como llegué acá ni que hacia antes, lo único que recuerdo es mi nombre.
-[1] (Mentir) - Si, sé de donde vengo y hacia donde voy.
+$OPCIONES|
+*[0] No sé como llegué acá ni que hacia antes, lo único que recuerdo es mi nombre.
+*[1] (Mentir) - Si, sé de donde vengo y hacia donde voy.
 
 5.
 Si OPCION[0]:
@@ -34,36 +44,36 @@ si OPCION[1]:
 (Wealthman): Mmmm...
 (Wealthman): Esta bien, ahora que estás descansado puedes ir en marcha.
 
-6. Luego de estar completamente descansado, te marchas de la casa del Sr. Wealthman y te diriges directo a la ciudad.
+#HISTORIA|Luego de estar completamente descansado, te marchas de la casa del Sr. Wealthman y te diriges directo a la ciudad.
 En el corazón de la ciudad se erige el GREMIO. Una institución fundada por el Rey con el propósito de que valientes 
 aventureros excursionen las tierras desconocidas, limpien caminos olvidados por el tiempo, y enfrentar a monstruos
 y criaturas que acechan en la oscuridad.
 
 input('Presione ENTER para seguir')
 
-7. Al entrar, te atiende una trabajadora. 
+#HISTORIA|Al entrar, te atiende una trabajadora. 
 (Trabajadora): ¡Hola! Veo que eres nuevo por aquí, te voy a explicar como funciona esto.
 (Althea): Primero que nada, permiteme presentarme: mi nombre es Althea y trabajo para el gremio. 
 Aquí, los aventureros no reciben un destino cualquiera, ¡sino el que ellos eligen!
 
 input('Presione ENTER para seguir')
 
-8. (Althea): Antes de mostrarte tu posible proxima destinación, tienes que elegir que oficio emplear.
+#HISTORIA|
+(Althea): Antes de mostrarte tu posible proxima destinación, tienes que elegir que oficio emplear.
 Cada uno de estos tiene sus cosas buenas y sus cosas malas, como todo.
-Estas son las opciones:
+$OPCIONES|Estas son las opciones:
 # Mostrar caracteristicas de cada uno
-[OPCIONES]
-[0] Guerrero
-[1] Mago
-[2] # Clerigo
+*[0] Guerrero
+*[1] Mago
+*[2] # Clerigo
 
-9. ¡Muy bien! Ahora que elegiste, estos son los trabajos disponibles para tu clase. Elige bien y acorde a tu nivel.
-[OPCIONES]
+#HISTORIA|¡Muy bien! Ahora que elegiste, estos son los trabajos disponibles para tu clase. Elige bien y acorde a tu nivel.
+$OPCIONES
 # Agregar en codigo restrinccion de nivel
 # Recompensa: oro, xp y arma? inteligencia?
-[0] ASEGURAR CAMINO DE BANDIDOS / Nvl. 1 a 3 / Recompensa: 1000 oro - 100 puntos de experiencia
-[1] RETOMAR LA FORTALEZA OLVIDADA DE LOS GOBLINS / Nvl. 3 a 6 / Recompensa: 10000 oro - 1000 puntos de experiencia
-[2] SACAR EL MAL DE RAIZ - BOSQUE OLVIDADO / Nvl. 6 a 9 / Recompensa: 100000 oro - 10000 puntos de experiencia
+*[0] ASEGURAR CAMINO DE BANDIDOS / Nvl. 1 a 3 / Recompensa: 1000 oro - 100 puntos de experiencia
+*[1] RETOMAR LA FORTALEZA OLVIDADA DE LOS GOBLINS / Nvl. 3 a 6 / Recompensa: 10000 oro - 1000 puntos de experiencia
+*[2] SACAR EL MAL DE RAIZ - BOSQUE OLVIDADO / Nvl. 6 a 9 / Recompensa: 100000 oro - 10000 puntos de experiencia
 
 10.
 Si OPCION[1]:
@@ -77,4 +87,4 @@ Si OPCION[1] or OPCION[3] and i = 3
 Si OPCION[0]:
 (Althea): Este trabajo se ve como para tu nivel, ten mucho cuidado y ¡vuelve en UNA PIEZA!
 
-11. - EL CORREDOR DE LA MUERTE - 
+#SIGUIENTE| - EL CORREDOR DE LA MUERTE - 
