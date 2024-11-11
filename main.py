@@ -1,3 +1,4 @@
+import os
 from personaje import *
 from escenario import *
 
@@ -8,6 +9,9 @@ class Juego:
     def mostrarTitulo(self):
         print('\n' + self.nombreJuego.center(50, ' ') + '\n')
     
+    def limpiarConsola(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+        
     def menu(self):
         print('[1] Comenzar.')
         print('[2] Instrucciones.')
