@@ -1,3 +1,6 @@
+from personaje import *
+from escenario import *
+
 class Juego:
     def __init__(self):
         self.nombreJuego = 'Words'
@@ -17,7 +20,10 @@ class Juego:
             # Usar try-except para control de entrada de numeros
             opcion = int(input('Seleccione opción: '))
             if opcion == 1:
-                pass
+                nombreJug = input('¿Cual es tu nombre?: ')
+                personajeJugador = Personaje(nombreJug, 10, 10, 100)
+                print(personajeJugador.atributos())
+
             elif opcion == 2:
                 try:
                     with open('instrucciones.txt', 'r', encoding='UTF-8') as instrucciones:
