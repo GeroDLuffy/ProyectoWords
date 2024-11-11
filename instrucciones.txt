@@ -1,0 +1,26 @@
+Words - Instrucciones del Juego
+Bienvenido a Words, un juego de aventura y rol de texto. Te embarcarás en una historia
+situada en una época medieval llena de fantasia. Deberás tomar decisiones importantes
+que afectarán tanto la historia como tu juego, habrá desafios y enemigos que deberás
+enfretar solo con tu ingenio.
+
+*Objetivo del Juego
+    Tu misión es explorar el mundo, interactuar con personajes, resolver acertijos y
+sobretodo, lo más importante, tomar decisiones. La forma en la que juegas determinará
+si tu personaje sobrevive o muere.
+
+*Como jugar
+    1. Comienzo de aventura: al iniciar el juego, se te dará a elegir un oficio, cada uno
+con sus fuerzas y debilidades. Selecciona tu elección ingresando el número correspondiente.
+    2. Decisiciones y Consecuencias: cada decisión que tomes influirá tanto en el destino de
+tu personaje como en tu personaje en sí.
+    3. Combate y Desafios:
+    
+*Reglas del juego
+    - Las respuestas incorrectas o decisiones imprudentes pueden hacer que pierdas puntos de
+vida o peor... la vida misma.
+    - No hay límite de tiempo, ¡tomate tu tiempo!
+    - Algunas decisiones abrirán caminos secretos y recompensas únicas.
+    
+
+
